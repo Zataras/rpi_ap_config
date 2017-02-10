@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#ifconfig wlan0 192.168.2.1
+#iptables-restore < /etc/iptables.ipv4.nat
+#hostapd -d /etc/hostapd/hostapd.conf
+
