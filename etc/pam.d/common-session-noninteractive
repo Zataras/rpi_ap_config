@@ -20,6 +20,8 @@ session	requisite			pam_deny.so
 # this avoids us returning an error just because nothing sets a success code
 # since the modules above will each just jump around
 session	required			pam_permit.so
+# reduce disk writes[mt]:
+session [success=1 default=ignore] pam_succeed_if.so service in cron quiet use_uid
 # and here are more per-package modules (the "Additional" block)
 session	required	pam_unix.so 
 # end of pam-auth-update config
