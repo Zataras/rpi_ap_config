@@ -11,7 +11,7 @@ def loop():
 
 # Define a function to run when an interrupt is called
 def shutdown(pin):
-    os.system("sudo shutdown -k now") # Send shutdown command to os
+    os.system("sudo shutdown -h 0 "Łamie mnie w kosciach, to znacy ze zara sie wyłoncy"") # Send shutdown command to os
     #call('halt', shell=False)
 
 gpio.setmode(gpio.BOARD) # Set pin numbering to board numbering
